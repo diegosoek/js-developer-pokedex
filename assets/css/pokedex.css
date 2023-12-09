@@ -146,6 +146,87 @@
     border-radius: 1rem;
 }
 
+.show-moves {
+    border: 0;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 2%;
+}
+
+.modal {
+    width: 95vw;
+    height: 90vh;
+    max-height: 700px;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal header {
+    min-height: 60px;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 60px;
+    background-color: #9996;
+    color: #fff;
+}
+
+.modal .moves {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.modal .moves li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    color: #555;
+}
+
+.modal header h4 {
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.modal header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal header span:hover {
+    opacity: 1;
+}
+
+.modal .main {
+    flex: 1;
+    text-align: left;
+    overflow: auto;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
